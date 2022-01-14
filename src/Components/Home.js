@@ -5,56 +5,50 @@ function Home() {
     return (
         <Container>
             <Section 
-                title = "Model S"
-                description = "Order Online"
-                backgroundImg = "model-s.jpg"
-                leftBtnText = "Custom Order"
-                rightBtnText = "Existing inventory"
+                title = "RoadRunner"
+                description = "A Powerful Powertrain made to Exhilarate and Electrify"
+                backgroundImg = "CarA2.jpg"
+                leftBtnText = "Order Online"
+                rightBtnText = "More Info"
              />
             <Section 
-                title = "Model Y"
-                description = "Order Online"
-                backgroundImg = "model-Y.jpg"
-                leftBtnText = "Custom Order"
-                rightBtnText = "Existing inventory"
+                title = "StarZap"
+                description = "The Next-Gen automobile with a crisp design to zap to your destination"
+                backgroundImg = "CarA3_1.jpg"
+                leftBtnText = "Order Online"
+                rightBtnText = "More Info"
             
             />
             <Section
-                title = "Model 3"
-                description = "Order Online"
-                backgroundImg = "model-3.jpg"
-                leftBtnText = "Custom Order"
-                rightBtnText = "Existing inventory"
+                title = "Black Hawk"
+                description = "A futuristic rig to fly like a hawk on trails"
+                backgroundImg = "e-bike_1.jpg"
+                leftBtnText = "Order Online"
+                rightBtnText = "More Info"
             
             />
             <Section 
-                title = "Model X"
-                description = "Order Online"
-                backgroundImg = "model-x.jpg"
-                leftBtnText = "Custom Order"
-                rightBtnText = "Existing inventory"
+                title = "Vibranium"
+                description = "The Menacing Paraphernalia to Intimidate with its stunning Performance"
+                backgroundImg = "b_bike.jpg"
+                leftBtnText = "Order Online"
+                rightBtnText = "More Info"
             />
             <Section 
                 title = "Solar Panels"
-                description = "Order Online"
+                description = "Energy in a Right Way"
                 backgroundImg = "solar-panel.jpg"
-                leftBtnText = "Custom Order"
-                rightBtnText = "Existing inventory"
+                leftBtnText = "Order Online"
+                rightBtnText = "Know More"
             />
             <Section 
                 title = "Solar for New Roofs"
-                description = "Order Online"
+                description = "Efficient Energy and Utilization"
                 backgroundImg = "solar-roof.jpg"
-                leftBtnText = "Custom Order"
-                rightBtnText = "Existing inventory"
+                leftBtnText = "Order Online"
+                rightBtnText = "Know More"
             />
-            <Section 
-                title = "Accessories"
-                description = "Order Online"
-                backgroundImg = "accessories.jpg"
-                leftBtnText = "Custom Order"
-                
-            />
+            
         </Container>
     )
 }

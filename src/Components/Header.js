@@ -67,7 +67,7 @@ const Menu = styled.div`
     justify-content: center;
     flex: 1;
     a:hover {
-        background-color: rgb(111, 107, 119);
+        background-color: #6662628e;
      
     }
 
@@ -93,6 +93,10 @@ const RightMenu = styled.div`
         text-transform: uppercase;
         margin-right: 10px;
     
+    }
+    a:hover {
+        background-color: #6662628e;
+     
     }
 
 `

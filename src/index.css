@@ -1,7 +1,8 @@
 * {
   box-sizing: border-box;
-  font-family: "Rubik", sans-serif;
-  color: #393c41;
+  font-size: 4vh;
+  font-family: "copperplate", fantasy;
+  color: #ca1616;
   margin: 0;
   padding: 0;
 }
