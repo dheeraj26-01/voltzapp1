@@ -1,7 +1,9 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState} from 'react'
 import styled from "styled-components"
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
+// eslint-disable-next-line no-unused-vars
 import { selectCars, selectcars } from '../features/car/carSlice';
 import { useSelector } from 'react-redux';
 
