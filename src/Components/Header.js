@@ -21,6 +21,7 @@ function Header() {
                 {cars && cars.map((car, index) =>(
                     <a key = { index } href = "#">{car}</a>
                 ))}
+                <div class="animation menu"></div>
             </Menu>
             <RightMenu>
                 <a href = "#">Shop</a>
@@ -67,10 +68,11 @@ const Menu = styled.div`
     justify-content: center;
     flex: 1;
     a:hover {
-        background-color: #6662628e;
-     
+        background-color: #5a5555c0;
+        transition: 1s ease .1s;
+        border-radius: 8px;
     }
-
+    
     a {
         font-weight: 600;
         text-transform: uppercase;
@@ -95,8 +97,10 @@ const RightMenu = styled.div`
     
     }
     a:hover {
-        background-color: #6662628e;
-     
+        background-color: #5a5555c0;
+        transition: 1s ease .1s;
+        border-radius: 8px;
+        transition: left;
     }
 
 `
