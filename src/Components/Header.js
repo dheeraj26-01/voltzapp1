@@ -13,7 +13,7 @@ function Header() {
      return (
         <Container>
             <a>
-                <img src = "/images/logo.svg" alt="" />
+                <img src = "/images/VoltZapp_Automotive.svg" alt="" />
             </a>
             <Menu>
                 {cars && cars.map((car, index) =>(
@@ -64,6 +64,10 @@ const Menu = styled.div`
     align-items: center;
     justify-content: center;
     flex: 1;
+    a:hover {
+        background-color: rgb(111, 107, 119);
+     
+    }
 
     a {
         font-weight: 600;
@@ -86,7 +90,7 @@ const RightMenu = styled.div`
         font-weight: 600;
         text-transform: uppercase;
         margin-right: 10px;
-        flex-wrap: nowrap;
+    
     }
 
 `
@@ -99,16 +103,18 @@ const BurgerNav = styled.div`
         top: 0;
         bottom: 0;
         right: 0;
-        background-color: white;
+        background: white;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
         width: 300px;
-        z-index: 16;
+        z-index: 2;
         list-style: none;
         padding: 20px;
         display: flex;
         flex-direction: column;
         text-align: start;
         transform: ${props => props.show ? 'translateX(0)':'translateX(100%)'};
-        transition: transform 0.2s;
+        transition: transform 0.8s;
         li {
             padding: 15px 0;
             border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -119,7 +125,7 @@ const BurgerNav = styled.div`
         }
 `
 const CustomClose = styled(CloseIcon)`
-        
+        cursor: pointer;
 `
 const CloseWrapper = styled.div`
         display: flex;

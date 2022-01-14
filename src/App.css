@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  scroll-snap-type: y mandatory;
+  overflow: auto;
+  height: 100vh;
 }
 
 .App-logo {
