@@ -63,15 +63,19 @@ const Container = styled.div`
 `
 
 const Menu = styled.div`
+    
     display: flex;
     align-items: center;
     justify-content: center;
     flex: 1;
     a:hover {
-        background-color: #5a5555c0;
-        transition: 1s ease .1s;
+        background-color: #00000060;
+        transition: .5s ease .1s;
         border-radius: 8px;
-    }
+        
+        
+      }
+
     
     a {
         font-weight: 600;
