@@ -25,7 +25,7 @@ function Header() {
             </Menu>
             <RightMenu>
                 <a href = "#">Shop</a>
-                <a href = "#">VoltZapp Account</a>
+                <a href = "#">Account</a>
                 <CustomMenu onClick = {()=>setBurgerStatus(true)} />
             </RightMenu>
             <BurgerNav show = {burgerStatus}>
@@ -72,9 +72,7 @@ const Menu = styled.div`
         background-color: #00000060;
         transition: .5s ease .1s;
         border-radius: 8px;
-        
-        
-      }
+    }
 
     
     a {
@@ -94,6 +92,7 @@ const Menu = styled.div`
 const RightMenu = styled.div`
     display: flex;
     align-items: center;
+    color: black;
     a {
         font-weight: 600;
         text-transform: uppercase;
@@ -102,9 +101,8 @@ const RightMenu = styled.div`
     }
     a:hover {
         background-color: #5a5555c0;
-        transition: 1s ease .1s;
-        border-radius: 8px;
-        transition: left;
+        transition: 1s ease 0.1s;
+        border-radius: 8px;  
     }
 
 `
