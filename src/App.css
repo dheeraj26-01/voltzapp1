@@ -4,6 +4,9 @@
   overflow: auto;
   height: 100vh;
 }
+.App::-webkit-scrollbar{
+  display: none;
+}
 
 .App-logo {
   height: 40vmin;
@@ -40,8 +43,8 @@
     transform: translateY(0px);
   }
 }
-*:before,
-*:after{
+a::before,
+a::after{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
