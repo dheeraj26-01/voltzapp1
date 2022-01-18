@@ -68,12 +68,7 @@ const Menu = styled.div`
     align-items: center;
     justify-content: center;
     flex: 1;
-    a:hover {
-        background-color: #00000060;
-        transition: .5s ease .1s;
-        border-radius: 8px;
-    }
-
+    
     
     a {
         font-weight: 600;
@@ -81,6 +76,41 @@ const Menu = styled.div`
         padding: 0 10px;
         flex-wrap: nowrap;
     }
+
+    a{
+        
+        color: #ca1616;
+        border-radius: 20px;
+        transition-transform: 0.3s ease;
+    }
+
+    a::after,
+    a::before{
+        position: absolute;
+        opacity: 0.3;
+        background: #000;
+        border-radius: inherit;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        transition-transform: 0.3s ease;
+    }
+    
+    a:hover{
+        transform: translate(-12px,-12px)
+    }
+
+    a:hover::after{
+        transform: translate(6px,6px)
+    }
+    
+    a:hover::before{
+        transform: translate(12px,12px)
+    }
+
+    
 
     @media (max-width: 768px) {
         display: none;
