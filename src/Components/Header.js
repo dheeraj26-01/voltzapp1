@@ -74,6 +74,10 @@ const Menu = styled.div`
         font-weight: 600;
         text-transform: uppercase;
         padding: 0 10px;
+        border: 2px solid #ca1616;
+        border-radius: 25px;
+        transition: all 1s;
+        position: relative;
         flex-wrap: nowrap;
     }
 
@@ -82,32 +86,40 @@ const Menu = styled.div`
         color: #ca1616;
         border-radius: 20px;
         transition-transform: 0.3s ease;
+        overflow: hidden;
     }
 
     a::after,
     a::before{
+        content: "";
         position: absolute;
-        opacity: 0.3;
-        background: #000;
+        
+        background: #ca1616;
         border-radius: inherit;
         width: 100%;
         height: 100%;
+        top: 0;
         left: 0;
         bottom: 0;
-        z-index: -1;
-        transition-transform: 0.3s ease;
+        z-index: -2;
+        transform: translateX(-100%);
+        transition:  all 1s;
     }
     
     a:hover{
-        transform: translate(-12px,-12px)
+        
+        color: #fff;
     }
 
     a:hover::after{
         transform: translate(6px,6px)
+        transition-transform: 0.8s ease;
     }
     
     a:hover::before{
-        transform: translate(12px,12px)
+       
+        transform: translateX(0);
+        transition-transform: 0.8s ease;
     }
 
     
@@ -123,16 +135,57 @@ const RightMenu = styled.div`
     display: flex;
     align-items: center;
     color: black;
+
     a {
         font-weight: 600;
         text-transform: uppercase;
-        margin-right: 10px;
-    
+        padding: 0 10px;
+        border: 2px solid #ca1616;
+        border-radius: 25px;
+        transition: all 1s;
+        position: relative;
+        flex-wrap: nowrap;
     }
-    a:hover {
-        background-color: #5a5555c0;
-        transition: 1s ease 0.1s;
-        border-radius: 8px;  
+
+    a{
+        
+        color: #ca1616;
+        border-radius: 20px;
+        transition-transform: 0.3s ease;
+        overflow: hidden;
+    }
+
+    a::after,
+    a::before{
+        content: "";
+        position: absolute;
+        
+        background: #ca1616;
+        border-radius: inherit;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        z-index: -2;
+        transform: translateX(-100%);
+        transition:  all 1s;
+    }
+    
+    a:hover{
+        
+        color: #fff;
+    }
+
+    a:hover::after{
+        transform: translate(6px,6px)
+        transition-transform: 0.8s ease;
+    }
+    
+    a:hover::before{
+       
+        transform: translateX(0);
+        transition-transform: 0.8s ease;
     }
 
 `
