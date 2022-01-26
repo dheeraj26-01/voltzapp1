@@ -8,6 +8,7 @@ import { selectCars, selectcars } from '../features/car/carSlice';
 import { useSelector } from 'react-redux';
 
 
+
 function Header() {
     const [burgerStatus, setBurgerStatus] = useState(false);
     const cars = useSelector(selectCars)
@@ -19,7 +20,7 @@ function Header() {
             </a>
             <Menu>
                 {cars && cars.map((car, index) =>(
-                    <a key = { index } href = "#">{car}</a>
+                    <a key = { index } href = "#">{car}</a>  
                 ))}
                 <div class="animation menu"></div>
             </Menu>
@@ -38,7 +39,6 @@ function Header() {
                     <li><a href = "#">Existing Inventory</a></li>
                     <li><a href = "#">Used Inventory</a></li>
                     <li><a href = "#">Trade-In</a></li>
-                    <li><a href = "#">CyberTruck</a></li>
                     
             </BurgerNav>
         </Container>
@@ -75,7 +75,7 @@ const Menu = styled.div`
         text-transform: uppercase;
         padding: 0 10px;
         border: 2px solid #ca1616;
-        border-radius: 25px;
+        border-radius: 30px;
         transition: all 1s;
         position: relative;
         flex-wrap: nowrap;
@@ -84,7 +84,8 @@ const Menu = styled.div`
     a{
         
         color: #ca1616;
-        border-radius: 20px;
+        margin-right: 10px;
+        border-radius: 30px;
         transition-transform: 0.3s ease;
         overflow: hidden;
     }
@@ -93,7 +94,6 @@ const Menu = styled.div`
     a::before{
         content: "";
         position: absolute;
-        
         background: #ca1616;
         border-radius: inherit;
         width: 100%;
@@ -103,7 +103,7 @@ const Menu = styled.div`
         bottom: 0;
         z-index: -2;
         transform: translateX(-100%);
-        transition:  all 1s;
+        transition:  all 0.5s;
     }
     
     a:hover{
@@ -113,13 +113,13 @@ const Menu = styled.div`
 
     a:hover::after{
         transform: translate(6px,6px)
-        transition-transform: 0.8s ease;
+        transition-transform: 0.8s ease-in-out;
     }
     
     a:hover::before{
        
         transform: translateX(0);
-        transition-transform: 0.8s ease;
+        transition-transform: 0.8s ease-in-out;
     }
 
     
@@ -136,12 +136,14 @@ const RightMenu = styled.div`
     align-items: center;
     color: black;
 
+    
     a {
         font-weight: 600;
         text-transform: uppercase;
         padding: 0 10px;
+        margin-right: 5px;
         border: 2px solid #ca1616;
-        border-radius: 25px;
+        border-radius: 30px;
         transition: all 1s;
         position: relative;
         flex-wrap: nowrap;
@@ -150,7 +152,7 @@ const RightMenu = styled.div`
     a{
         
         color: #ca1616;
-        border-radius: 20px;
+        border-radius: 30px;
         transition-transform: 0.3s ease;
         overflow: hidden;
     }
@@ -159,7 +161,6 @@ const RightMenu = styled.div`
     a::before{
         content: "";
         position: absolute;
-        
         background: #ca1616;
         border-radius: inherit;
         width: 100%;
