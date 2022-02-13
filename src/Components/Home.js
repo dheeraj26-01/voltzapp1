@@ -44,7 +44,7 @@ function Home() {
             <Section 
                 title = "Solar for New Roofs"
                 description = "Efficient Energy and Utilization"
-                backgroundImg = "solar-roof.jpg"
+                backgroundImg = "solar-panel-roof.jpg"
                 leftBtnText = "Order Online"
                 rightBtnText = "Know More"
             />
